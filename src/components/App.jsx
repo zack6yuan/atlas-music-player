@@ -4,6 +4,7 @@ import CoverArt from "./CoverArt";
 import SongTitle from "./SongTitle";
 import PlayControls from "./PlayControls";
 import VolumeControls from "./VolumeControls";
+import PlayListItem from "./PlayListItem";
 
 /*
 Tailwind Breakpoints
@@ -22,6 +23,7 @@ function App() {
       <SongTitle />
       <PlayControls />
       <VolumeControls />
+      <PlayListItem />
       <Footer />
     </div>
   );
