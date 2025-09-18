@@ -21,8 +21,6 @@ function App() {
       <MusicPlayer />
       <CoverArt />
       <SongTitle />
-      <PlayControls />
-      <VolumeControls />
       <PlayListItem />
       <Footer />
     </div>

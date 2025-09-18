@@ -5,7 +5,7 @@ import shuffle from "../assets/shuffle.svg";
 
 export default function PlayControls() {
     return (
-        <div className="play-controls flex">
+        <div className="play-controls flex 2xl:gap-18">
             <p>1x</p>
             <img src={ previous } alt="previous-icon" class=""/>
             <img src={ play } alt="play-icon" class=""/>
