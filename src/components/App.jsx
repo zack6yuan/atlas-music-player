@@ -20,11 +20,11 @@ function App() {
     <div>
       <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row">
         <MusicPlayer />
-        <div className="shadow-md">
+        <div className="shadow-md md:w-1/2 md:mb-50">
           <CoverArt />
           <SongTitle />
         </div>
-        <div className="shadow-md">
+        <div className="shadow-md md:w-1/2 md:mb-50">
           <PlayListItem />
         </div>
       </div>
