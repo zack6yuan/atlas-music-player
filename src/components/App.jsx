@@ -17,14 +17,16 @@ Tailwind Breakpoints
 
 function App() {
   return (
-    <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-      <MusicPlayer />
-      <div className="shadow-md">
-        <CoverArt />
-        <SongTitle />
-      </div>
-      <div className="shadow-md">
-        <PlayListItem />
+    <div>
+      <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row">
+        <MusicPlayer />
+        <div className="shadow-md">
+          <CoverArt />
+          <SongTitle />
+        </div>
+        <div className="shadow-md">
+          <PlayListItem />
+        </div>
       </div>
       <Footer />
     </div>
