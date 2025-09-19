@@ -23,7 +23,9 @@ function App() {
         <CoverArt />
         <SongTitle />
       </div>
-      <PlayListItem />
+      <div className="shadow-md">
+        <PlayListItem />
+      </div>
       <Footer />
     </div>
   );
