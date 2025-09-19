@@ -17,7 +17,7 @@ Tailwind Breakpoints
 
 function App() {
   return (
-    <div className="h-full flex flex-col justify-between p-8 min-h-screen">
+    <div className="h-full flex flex-col justify-between p-8 min-h-scree">
       <MusicPlayer />
       <div className="shadow-md">
         <CoverArt />
