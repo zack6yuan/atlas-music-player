@@ -1,14 +1,8 @@
+@import "tailwindcss";
 @import url('https://fonts.cdnfonts.com/css/okashi');
 
-* {
-    font-family: Okashi;
-}
-
 /* need to use the tailwind font face utility */
-
-@import "tailwindcss";
-
-:root {
+@theme {
   --color-orange-dark: #de8401;
   --color-orange-medium: #eea504;
   --color-orange-light: #ffce1f;
