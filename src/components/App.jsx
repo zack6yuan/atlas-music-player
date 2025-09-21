@@ -1,10 +1,8 @@
-import Footer from "./Footer";
-import MusicPlayer from "./MusicPlayer";
-import CoverArt from "./CoverArt";
-import SongTitle from "./SongTitle";
-import PlayControls from "./PlayControls";
-import VolumeControls from "./VolumeControls";
-import PlayListItem from "./PlayListItem";
+import Footer from "./Footer.tsx";
+import MusicPlayer from "./MusicPlayer.tsx";
+import CoverArt from "./CoverArt.tsx";
+import SongTitle from "./SongTitle.tsx";
+import PlayListItem from "./PlayListItem.tsx";
 
 /*
 Tailwind Breakpoints
@@ -14,17 +12,17 @@ Tailwind Breakpoints
     xl --> 1280px and up
     2xl --> 1536px and up
 */
-
+// still need to do dark mode
 function App() {
   return (
-    <div>
-      <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row">
+    <div className="bg-white">
+      <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row deeporange">
         <MusicPlayer />
-        <div className="shadow-md md:w-1/2 md:mb-50">
+        <div className="shadow-sm shadow-blue md:w-1/2 md:mb-50">
           <CoverArt />
           <SongTitle />
         </div>
-        <div className="shadow-md md:w-1/2 md:mb-50">
+        <div className="shadow-sm shadow-blue md:w-1/2 md:mb-50">
           <PlayListItem />
         </div>
       </div>

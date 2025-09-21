@@ -1,9 +1,19 @@
 @import "tailwindcss";
 @import url('https://fonts.cdnfonts.com/css/okashi');
 
+* {
+    font-family: 'Third Rail - Demo';
+}
+.song-length {
+    font-family: 'Third Rail - Demo';
+}
+.colon {
+    font-family:'Courier New', Courier, monospace;
+}
+
 /* need to use the tailwind font face utility */
 @theme {
-  --color-orange-dark: #de8401;
-  --color-orange-medium: #eea504;
-  --color-orange-light: #ffce1f;
+  --color-white: #FFFFFF;
+  --color-blue: #2d8cff;
+  --color-navy: #232533;
 }
