@@ -1,4 +1,21 @@
+// import { useEffect, useState } from 'react';
+
 export default function PlayListItem() {
+    /* 
+    const [song, setSong] = useState({})
+
+    useEffect(() => {
+        fetch("../api/v1/playlist")
+            .then((response) =>{
+                const data = response.json();
+                return data;
+            })
+            .then((data) => {
+                setSong(data)
+            });
+    }, [])
+    */
+
   return (
     <div className="bg-white">
       <div className="flex sm:mt-5 sm:ml-5">
