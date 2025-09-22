@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="">
         <div className="text-center p-8 sm:mt-50">
-            <span className="colon">&copy;</span> {year} Atlas School
+            <span className="colon">&copy; {year}</span>  Atlas School
         </div>
         <div className="theme-button text-center mb-10">
             <button id="theme-button">
