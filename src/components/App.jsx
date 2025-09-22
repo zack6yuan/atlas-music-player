@@ -18,11 +18,11 @@ function App() {
     <div className="bg-white">
       <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row deeporange">
         <MusicPlayer />
-        <div className="shadow-sm shadow-black md:w-1/2 md:mb-120 lg:mb-90">
+        <div className=" md:w-1/2 md:mb-120 lg:mb-90 border-2 border-black rounded">
           <CoverArt />
           <SongTitle />
         </div>
-        <div className="shadow-sm shadow-black md:w-1/2 md:mb-120 lg:mb-90">
+        <div className="md:w-1/2 md:mb-120 lg:mb-90 border-2 border-black rounded">
           <PlayListItem />
         </div>
       </div>
