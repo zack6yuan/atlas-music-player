@@ -13,6 +13,9 @@
 .dark-mode p {
     color: white;
 }
+.first-song {
+    margin-right: 10px;
+}
 
 @theme {
   --color-white: #FFFFFF; /* white */

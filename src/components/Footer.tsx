@@ -20,8 +20,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <div className="sm:-mt-60 md:-mt-92">
-        <div className="text-center p-8 sm:mt-50">
-            <span className="colon">&copy; {year}</span> Atlas School
+        <div className="desc-text text-center p-8 sm:mt-50">
+            &copy; {year} Atlas School
         </div>
         <div className="flex justify-center theme-button text-center sm:mb-15 sm:-mt-5 md:-mt-6 cursor-pointer">
             <img src={ image } onClick={ changeTheme } alt="theme-image" />

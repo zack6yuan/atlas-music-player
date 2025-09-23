@@ -1,32 +1,90 @@
 import { useState, useEffect, useRef } from 'react';
-import LoadingSkeleton from "./LoadingSkeleton";
+import SongTItle from './SongTitle';
 
 export default function PlayListItem() {
-    // const [color, setColor] = useState("white")
     // const [loading, isLoading] = useState(true);
 
-    const referenceone  = useRef(null);
+    const firstRef = useRef<HTMLDivElement>(null);
+    const secondRef = useRef<HTMLDivElement>(null);
+    const thirdRef = useRef<HTMLDivElement>(null);
+    const fourthRef = useRef<HTMLDivElement>(null);
+    const fifthRef = useRef<HTMLDivElement>(null);
+    const sixthRef = useRef<HTMLDivElement>(null);
+    const seventhRef = useRef<HTMLDivElement>(null);
+    const eighthRef = useRef<HTMLDivElement>(null);
+    const ninthRef = useRef<HTMLDivElement>(null);
+    const tenthRef = useRef<HTMLDivElement>(null);
+    
 
-    /*
-    useEffect(() => {
-        referenceone.current.style.backgroundColor = color
-    }, [color]);
-    */
+    const SelectChangeOne = () => {
+        if (firstRef.current) {
+            firstRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeTwo = () => {
+        if (secondRef.current) {
+            secondRef.current.style.backgroundColor = '#c9c9c9'
+        }
+        if (firstDivRef.current) {
+            firstDivRef.current.style.backgroundColor = '#FFFFFF';
+        }
+    }
+    const SelectChangeThree = () => {
+        if (thirdRef.current) {
+            thirdRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeFour = () => {
+        if (fourthRef.current) {
+            fourthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeFive = () => {
+        if (fifthRef.current) {
+            fifthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeSix = () => {
+        if (sixthRef.current) {
+            sixthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeSeven = () => {
+        if (seventhRef.current) {
+            seventhRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeEight = () => {
+        if (eighthRef.current) {
+            eighthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeNine = () => {
+        if (ninthRef.current) {
+            ninthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+    const SelectChangeTen = () => {
+        if (tenthRef.current) {
+            tenthRef.current.style.backgroundColor = '#c9c9c9'
+        }
+    }
+
 
   return (
     <div className="">
       <h1 className="sm:mt-5 sm:ml-5">Playlist</h1>
-      <div className="md:-mt-8">
-        <div className="flex sm:-mt-4 sm:ml-19 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
-          <div className="font-medium sm:mt-9 sm:-ml-14">
+      <div className="md:-mt-8 sm:-mt-6">
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={ SelectChangeOne }>
+          <div className="font-medium sm:mt-8">
             <p className="desc-text">PAINTED IN BLUE</p>
             <p className="text-crimson text-sm desc-text">Soul Canvas</p>
           </div>
-          <div className="sm:mt-13 sm:mr-10 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
+          <div className="sm:mt-13 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
             <p className="text-gray song-length font-medium">5:55</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") } ref={ referenceone }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ secondRef } onClick={SelectChangeTwo}>
           <div className="font-medium">
             <p className="desc-text">TIDAL DRIFT</p>
             <p className="text-crimson text-sm desc-text">Echoes of the Sea</p>
@@ -35,7 +93,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">8:02</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") } ref={ referenceone }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ thirdRef } onClick={ SelectChangeThree }>
           <div className="font-medium">
             <p className="text-base desc-text">FACING SHADOWS</p>
             <p className="text-crimson text-sm desc-text">The Emberlight</p>
@@ -44,7 +102,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">3:01</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fourthRef } onClick={ SelectChangeFour }>
           <div className="font-medium">
             <p className="text-base desc-text">COSMIC DRIFT</p>
             <p className="text-crimson text-sm desc-text">Solar Flare</p>
@@ -53,7 +111,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">5:01</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fifthRef } onClick={ SelectChangeFive }>
           <div className="font-medium">
             <p className="text-base desc-text">URBAN SERANADE</p>
             <p className="text-crimson text-sm desc-text">Midnight Groove</p>
@@ -62,7 +120,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">4:54</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ sixthRef } onClick={ SelectChangeSix }>
           <div className="font-medium">
             <p className="text-base desc-text">WHISPERS IN THE WIND</p>
             <p className="text-crimson text-sm desc-text">Rust & Ruin</p>
@@ -71,7 +129,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">6:13</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ seventhRef } onClick={ SelectChangeSeven }>
           <div className="font-medium">
             <p className="text-base desc-text">ELECTRIC FEVER</p>
             <p className="text-crimson text-sm desc-text">Neon Jungle</p>
@@ -80,7 +138,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">8:41</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ eighthRef } onClick={ SelectChangeEight }>
           <div className="font-medium">
             <p className="text-base desc-text">ELECTRIC WILDFLOWER</p>
             <p className="text-crimson text-sm desc-text">Velvet Ember</p>
@@ -89,7 +147,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">2:27</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ ninthRef } onClick={ SelectChangeNine }>
           <div className="font-medium">
             <p className="text-base desc-text">GOLDEN HAZE</p>
             <p className="text-crimson desc-text">Velvet Waves</p>
@@ -98,7 +156,7 @@ export default function PlayListItem() {
             <p className="text-gray song-length font-medium">3:15</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5 cursor-pointer" onClick={ () => setColor("#e2e8f0") }>
+        <div className="flex rounded sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5 cursor-pointer" ref={ tenthRef } onClick={ SelectChangeTen }>
           <div className="font-medium">
             <p className="text-base desc-text">SHATTER THE SILENCE</p>
             <p className="text-crimson text-sm desc-text">Thunderclap Echo</p>
