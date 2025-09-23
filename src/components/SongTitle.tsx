@@ -1,16 +1,22 @@
 import PlayControls from "./PlayControls";
 import VolumeControls from "./VolumeControls.tsx";
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
-export default function SongTItle() {
-    const title = useRef<HTMLDivElement>(null);
-    const artist = useRef<HTMLDivElement>(null);
-    
+export default function SongTitle() {
+    const [title, setTitle] = useState("Painted in Blue")
+    const [artist, setArtist] = useState("Soul Canvas")
+
+    const changeTitle = () => {
+        setTitle("Tidal Drift");
+    }
+    const changeArtist = () => {
+        setArtist("Echoes of the Sea");
+    }
 
     return (
         <div className="song-title 2xl:ml-70 2xl:-mt-32 xl:-mt-2 xl:ml-40 lg:-mt-5 lg:ml-15 md:mt-1 md:mb-6 md:ml-6 sm:mb-6 sm:ml-6">
-            <h1 className="text-2xl font-bold" ref={ title }>Painted in Blue</h1>
-            <p className="font-normal mt-2 text-crimson desc-text" ref={ artist }>Soul Canvas</p>
+            <h1 className="text-2xl font-bold" onClick={changeTitle}>{ title }</h1>
+            <p className="font-normal mt-2 text-crimson desc-text" onClick={changeArtist}>{ artist }</p>
             <div className="play 2xl:mt-6 xl:mt-6 xl:ml-3 lg:ml-2 lg:mt-6 md:ml-5 md:mt-5 sm:mt-5 sm:ml-4">
                 <PlayControls />
             </div>

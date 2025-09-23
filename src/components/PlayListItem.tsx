@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import SongTItle from './SongTitle';
+import SongTitle from './SongTitle';
 
 export default function PlayListItem() {
     // const [loading, isLoading] = useState(true);
@@ -67,99 +67,98 @@ export default function PlayListItem() {
         }
     }
 
-
-  return (
+    return (
     <div className="">
       <h1 className="sm:mt-6 sm:ml-5 bg-white">Playlist</h1>
       <div className="md:-mt-8 sm:-mt-6">
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={ SelectChangeOne }>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={SelectChangeOne}>
           <div className="font-medium sm:mt-8">
             <p className="desc-text">PAINTED IN BLUE</p>
-            <p className="text-crimson text-sm desc-text">Soul Canvas</p>
+            <p className="text-crimson text-sm desc-text italic">Soul Canvas</p>
           </div>
-          <div className="sm:mt-13 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">5:55</p>
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
+            <p className="text-gray song-length font-medium">05:55</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ secondRef } onClick={SelectChangeTwo}>
           <div className="font-medium">
             <p className="desc-text">TIDAL DRIFT</p>
-            <p className="text-crimson text-sm desc-text">Echoes of the Sea</p>
+            <p className="text-crimson text-sm desc-text italic">Echoes of the Sea</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">8:02</p>
+            <p className="text-gray song-length font-medium">08:02</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ thirdRef } onClick={ SelectChangeThree }>
           <div className="font-medium">
             <p className="text-base desc-text">FACING SHADOWS</p>
-            <p className="text-crimson text-sm desc-text">The Emberlight</p>
+            <p className="text-crimson text-sm desc-text italic">The Emberlight</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">3:01</p>
+            <p className="text-gray song-length font-medium">03:01</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fourthRef } onClick={ SelectChangeFour }>
           <div className="font-medium">
             <p className="text-base desc-text">COSMIC DRIFT</p>
-            <p className="text-crimson text-sm desc-text">Solar Flare</p>
+            <p className="text-crimson text-sm desc-text italic">Solar Flare</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">5:01</p>
+            <p className="text-gray song-length font-medium">05:01</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fifthRef } onClick={ SelectChangeFive }>
           <div className="font-medium">
             <p className="text-base desc-text">URBAN SERANADE</p>
-            <p className="text-crimson text-sm desc-text">Midnight Groove</p>
+            <p className="text-crimson text-sm desc-text italic">Midnight Groove</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">4:54</p>
+            <p className="text-gray song-length font-medium">04:54</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ sixthRef } onClick={ SelectChangeSix }>
           <div className="font-medium">
             <p className="text-base desc-text">WHISPERS IN THE WIND</p>
-            <p className="text-crimson text-sm desc-text">Rust & Ruin</p>
+            <p className="text-crimson text-sm desc-text italic">Rust & Ruin</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">6:13</p>
+            <p className="text-gray song-length font-medium">06:13</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ seventhRef } onClick={ SelectChangeSeven }>
           <div className="font-medium">
             <p className="text-base desc-text">ELECTRIC FEVER</p>
-            <p className="text-crimson text-sm desc-text">Neon Jungle</p>
+            <p className="text-crimson text-sm desc-text italic">Neon Jungle</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">8:41</p>
+            <p className="text-gray song-length font-medium">08:41</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ eighthRef } onClick={ SelectChangeEight }>
           <div className="font-medium">
             <p className="text-base desc-text">ELECTRIC WILDFLOWER</p>
-            <p className="text-crimson text-sm desc-text">Velvet Ember</p>
+            <p className="text-crimson text-sm desc-text italic">Velvet Ember</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">2:27</p>
+            <p className="text-gray song-length font-medium">02:27</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ ninthRef } onClick={ SelectChangeNine }>
           <div className="font-medium">
             <p className="text-base desc-text">GOLDEN HAZE</p>
-            <p className="text-crimson desc-text">Velvet Waves</p>
+            <p className="text-crimson desc-text italic">Velvet Waves</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">3:15</p>
+            <p className="text-gray song-length font-medium">03:15</p>
           </div>
         </div>
         <div className="flex rounded sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5 cursor-pointer" ref={ tenthRef } onClick={ SelectChangeTen }>
           <div className="font-medium">
             <p className="text-base desc-text">SHATTER THE SILENCE</p>
-            <p className="text-crimson text-sm desc-text">Thunderclap Echo</p>
+            <p className="text-crimson text-sm desc-text italic">Thunderclap Echo</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">8:22</p>
+            <p className="text-gray song-length font-medium">08:22</p>
           </div>
         </div>
       </div>
