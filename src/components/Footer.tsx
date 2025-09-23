@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="text-center p-8 sm:mt-50">
             <span className="colon">&copy; {year}</span>  Atlas School
         </div>
-        <div className="flex justify-center theme-button text-center sm:mb-15 sm:-mt-5 md:-mt-6">
+        <div className="flex justify-center theme-button text-center sm:mb-15 sm:-mt-5 md:-mt-6 cursor-pointer">
             <img src={ image } onClick={changeImage} alt="theme-image" />
         </div>
     </div>

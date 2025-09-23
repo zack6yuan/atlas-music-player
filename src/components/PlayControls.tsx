@@ -5,7 +5,7 @@ import play from "../assets/play.svg";
 import pause from "../assets/pause.svg";
 import next from "../assets/next.svg";
 import shuffle from "../assets/shuffle.svg";
-import red from "../assets/shuffle-clicked.svg";
+import shuffleClicked from "../assets/shuffle-clicked.svg";
 
 export default function PlayControls() {
   const [image, setImage] = useState(shuffle);
@@ -14,9 +14,9 @@ export default function PlayControls() {
 
   const changeImage = () => {
     if (image === shuffle) {
-      setImage(shuffle);
+      setImage(shuffleClicked);
     } else {
-      setImage(red);
+      setImage(shuffle);
     }
   };
 

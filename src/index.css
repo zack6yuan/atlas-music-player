@@ -9,8 +9,8 @@
 
 @theme {
   --color-white: #FFFFFF; /* white */
-  --color-gray: #333333;
-  --color-navy: #232533;
-  --color-lightgray: #F5F5F5;
-  --color-crimson: #DC143C;
+  --color-gray: #333333; /* dark gray */
+  --color-navy: #232533; /* navy */
+  --color-lightgray: #F5F5F5; /* light gray */
+  --color-crimson: #DC143C; /* crimson */
 }
