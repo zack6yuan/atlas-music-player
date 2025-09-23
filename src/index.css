@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.cdnfonts.com/css/okashi');
 
 * {
     font-family: 'Lemon Milk Medium';
@@ -8,11 +7,10 @@
     font-family: 'Coolvetica';
 }
 
-/* need to use the tailwind font face utility */
 @theme {
   --color-white: #FFFFFF; /* white */
-  --color-blue: #65f0e6;
+  --color-gray: #333333;
   --color-navy: #232533;
-  --color-dgreen: #F5F5F5;
-  --color-lgreen: #65f0e6;
+  --color-lightgray: #F5F5F5;
+  --color-crimson: #DC143C;
 }
