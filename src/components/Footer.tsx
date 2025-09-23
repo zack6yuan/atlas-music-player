@@ -5,12 +5,15 @@ import moon from "../assets/moon.svg";
 
 export default function Footer() {
     const [image, setImage] = useState(moon);
+    const [theme, setTheme] = useState("light");
 
-    const changeImage = () => {
-        if (image === moon) {
-            setImage(sun);
-        } else {
+    const changeTheme = () => {
+        if (theme === 'light') {
+            setTheme('dark');
             setImage(moon);
+        } else {
+            setTheme('light')
+            setImage(sun);
         }
     }
 
@@ -21,7 +24,7 @@ export default function Footer() {
             <span className="colon">&copy; {year}</span>  Atlas School
         </div>
         <div className="flex justify-center theme-button text-center sm:mb-15 sm:-mt-5 md:-mt-6 cursor-pointer">
-            <img src={ image } onClick={changeImage} alt="theme-image" />
+            <img src={ image } onClick={ changeTheme } alt="theme-image" />
         </div>
     </div>
   );

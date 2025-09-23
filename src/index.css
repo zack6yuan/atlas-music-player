@@ -7,6 +7,13 @@
     font-family: 'Coolvetica';
 }
 
+.dark-mode {
+    background-color: #333333;
+}
+.dark-mode p {
+    color: white;
+}
+
 @theme {
   --color-white: #FFFFFF; /* white */
   --color-gray: #333333; /* dark gray */
