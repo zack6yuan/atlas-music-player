@@ -15,14 +15,14 @@ Tailwind Breakpoints
 // still need to do dark mode
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-dgreen">
       <div className="h-full flex flex-col justify-between p-8 min-h-screen md:flex-row deeporange">
         <MusicPlayer />
-        <div className=" md:w-1/2 md:mb-120 lg:mb-90 border-2 border-black rounded">
+        <div className=" md:w-1/2 md:mb-120 lg:mb-90 border-2 border-lgreen rounded">
           <CoverArt />
           <SongTitle />
         </div>
-        <div className="md:w-1/2 md:mb-120 lg:mb-90 border-2 border-black rounded">
+        <div className="md:w-1/2 md:mb-120 lg:mb-90 border-2 border-lgreen rounded">
           <PlayListItem />
         </div>
       </div>

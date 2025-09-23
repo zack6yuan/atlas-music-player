@@ -1,12 +1,12 @@
 export default function PlayListItem() {
   return (
-    <div className="">
+    <div className="bg-dgreen">
       <h1 className="sm:mt-5 sm:ml-5">Playlist</h1>
       <div className="bg-white md:-mt-8">
         <div className="flex sm:-mt-4 sm:ml-19 ">
           <div className="font-medium sm:mt-9 sm:-ml-14">
             <p className="">Painted in Blue</p>
-            <p className="text-blue text-sm">Soul Canvas</p>
+            <p className="text-blue text-sm desc-text">Soul Canvas</p>
           </div>
           <div className="sm:mt-13 sm:mr-10 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -17,7 +17,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Tidal Drift</p>
-            <p className="text-blue text-sm">Echoes of the Sea</p>
+            <p className="text-blue text-sm desc-text">Echoes of the Sea</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -28,7 +28,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Facing Shadows</p>
-            <p className="text-blue text-sm">The Emberlight</p>
+            <p className="text-blue text-sm desc-text">The Emberlight</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -39,7 +39,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Cosmic Drift</p>
-            <p className="text-blue text-sm">Solar Flare</p>
+            <p className="text-blue text-sm desc-text">Solar Flare</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -50,7 +50,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Urban Seranade</p>
-            <p className="text-blue text-sm">Midnight Groove</p>
+            <p className="text-blue text-sm desc-text">Midnight Groove</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -61,8 +61,8 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Whispers in the Wind</p>
-            <p className="text-blue text-sm">
-              Rust <span className="colon">&</span> Ruin
+            <p className="text-blue text-sm desc-text">
+              Rust & Ruin
             </p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
@@ -74,7 +74,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Electric Fever</p>
-            <p className="text-blue text-sm">Neon Jungle</p>
+            <p className="text-blue text-sm desc-text">Neon Jungle</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -85,7 +85,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Electric Wildflower</p>
-            <p className="text-blue text-sm">Velvet Ember</p>
+            <p className="text-blue text-sm desc-text">Velvet Ember</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -96,7 +96,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Golden Haze</p>
-            <p className="text-blue">Velvet Waves</p>
+            <p className="text-blue desc-text">Velvet Waves</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
@@ -107,7 +107,7 @@ export default function PlayListItem() {
         <div className="flex rounded hover:bg-blue-200 sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5">
           <div className="font-medium">
             <p className="text-base">Shatter the Silence</p>
-            <p className="text-blue text-sm">Thunderclap Echo</p>
+            <p className="text-blue text-sm desc-text">Thunderclap Echo</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
             <p className="text-navy song-length font-medium">
