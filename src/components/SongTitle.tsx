@@ -3,8 +3,9 @@ import VolumeControls from "./VolumeControls.tsx";
 import { useRef } from 'react';
 
 export default function SongTItle() {
-    const title = useRef(null);
-    const artist = useRef(null);
+    const title = useRef<HTMLDivElement>(null);
+    const artist = useRef<HTMLDivElement>(null);
+    
 
     return (
         <div className="song-title 2xl:ml-70 2xl:-mt-32 xl:-mt-2 xl:ml-40 lg:-mt-5 lg:ml-15 md:mt-1 md:mb-6 md:ml-6 sm:mb-6 sm:ml-6">
