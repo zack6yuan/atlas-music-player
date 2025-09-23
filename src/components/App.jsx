@@ -3,6 +3,9 @@ import MusicPlayer from "./MusicPlayer.tsx";
 import CoverArt from "./CoverArt.tsx";
 import SongTitle from "./SongTitle.tsx";
 import PlayListItem from "./PlayListItem.tsx";
+import LoadingSkeleton from "./LoadingSkeleton.jsx";
+
+import { useState } from 'react';
 
 /*
 Tailwind Breakpoints
@@ -14,6 +17,8 @@ Tailwind Breakpoints
 */
 // still need to do dark mode
 function App() {
+    const [loading, isLoading] = useState(true);
+
   return (
     <div>
       <MusicPlayer />

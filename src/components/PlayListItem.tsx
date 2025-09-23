@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import LoadingSkeleton from "./LoadingSkeleton";
 
 export default function PlayListItem() {
-    const [color, setColor] = useState("white")
+    // const [color, setColor] = useState("white")
+    // const [loading, isLoading] = useState(true);
+
     const referenceone  = useRef(null);
 
     /*
