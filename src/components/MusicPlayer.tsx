@@ -1,8 +1,17 @@
+import { useEffect } from 'react';
 import CoverArt from "./CoverArt";
 import SongTitle from "./SongTitle";
 import PlayListItem from "./PlayListItem";
 
 export default function MusicPlayer() {
+    useEffect(() => {
+        fetch('/api/v1/songs')
+        .then(response => {
+            return response.json
+        })
+    }, [])
+    const [currentSong, setCurrentSong] = useState(songs[0])
+
   return (
     <div className="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row">
         {/* Currently playing components */}

@@ -16,6 +16,9 @@
 .first-song {
     margin-right: 10px;
 }
+.playlist-header {
+    background-color: red;
+}
 
 @theme {
   --color-white: #FFFFFF; /* white */

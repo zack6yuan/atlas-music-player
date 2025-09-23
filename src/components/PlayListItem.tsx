@@ -25,9 +25,6 @@ export default function PlayListItem() {
         if (secondRef.current) {
             secondRef.current.style.backgroundColor = '#c9c9c9'
         }
-        if (firstDivRef.current) {
-            firstDivRef.current.style.backgroundColor = '#FFFFFF';
-        }
     }
     const SelectChangeThree = () => {
         if (thirdRef.current) {
@@ -73,7 +70,7 @@ export default function PlayListItem() {
 
   return (
     <div className="">
-      <h1 className="sm:mt-5 sm:ml-5">Playlist</h1>
+      <h1 className="sm:mt-6 sm:ml-5 bg-white">Playlist</h1>
       <div className="md:-mt-8 sm:-mt-6">
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={ SelectChangeOne }>
           <div className="font-medium sm:mt-8">
