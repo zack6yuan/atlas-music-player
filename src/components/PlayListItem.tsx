@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import SongTitle from './SongTitle';
 
 export default function PlayListItem() {
-    // const [loading, isLoading] = useState(true);
+    const [song, setSong] = useState(null);
 
     const firstRef = useRef<HTMLDivElement>(null);
     const secondRef = useRef<HTMLDivElement>(null);
@@ -14,6 +14,61 @@ export default function PlayListItem() {
     const eighthRef = useRef<HTMLDivElement>(null);
     const ninthRef = useRef<HTMLDivElement>(null);
     const tenthRef = useRef<HTMLDivElement>(null);
+
+    const playlistURL = 'api/v1/playlist' // playlist URL
+
+    const songs = [
+        {
+            title: "Painted in Blue",
+            artist: 'Soul Canvas',
+            length: '05:55'
+        },
+        {
+            title: "Tidal Drift",
+            artist: 'Echoes of the Sea',
+            length: '08:02'
+        },
+        {
+            title: "Facing Shadows",
+            artist: 'The Emberlight',
+            length: '03:01'
+        },
+        {
+            title: "Cosmic Drift",
+            artist: 'Solar Flare',
+            length: '05:01'
+        },
+        {
+            title: "Urban Seranade",
+            artist: 'Midnight Groove',
+            length: '04:54'
+        },
+        {
+            title: "Whispers in the Wind",
+            artist: 'Rust & Ruin',
+            length: '06:13'
+        },
+        {
+            title: "Electric Fever",
+            artist: 'Neon Jungle',
+            length: '08:41'
+        },
+        {
+            title: "Electric Wildflower",
+            artist: 'Velvet Ember',
+            length: '02:27'
+        },
+        {
+            title: "Golden Haze",
+            artist: 'Velvet Waves',
+            length: '03:15'
+        },
+        {
+            title: "Shatter the Silence",
+            artist: 'Thunderclap Echo',
+            length: '08:22'
+        },
+    ]
     
 
     const SelectChangeOne = () => {
@@ -73,7 +128,7 @@ export default function PlayListItem() {
       <div className="md:-mt-8 sm:-mt-6">
         <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={SelectChangeOne} >
           <div className="font-medium sm:mt-8">
-            <p className="desc-text">PAINTED IN BLUE</p>
+            <p className="desc-text"></p>
             <p className="text-crimson text-sm desc-text italic">Soul Canvas</p>
           </div>
           <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">

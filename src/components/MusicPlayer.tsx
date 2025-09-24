@@ -1,6 +1,6 @@
 import CoverArt from "./CoverArt";
 import SongTitle from "./SongTitle";
-import PlayListItem from "./PlayListItem";
+import PlayListItem from "./playlistredo";
 
 export default function MusicPlayer() {
   return (

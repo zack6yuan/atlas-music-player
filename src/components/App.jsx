@@ -1,6 +1,5 @@
 import Footer from "./Footer.tsx";
 import MusicPlayer from "./MusicPlayer.tsx";
-import { useState } from 'react';
 /*
 Tailwind Breakpoints
     sm --> 640px and up
@@ -10,8 +9,6 @@ Tailwind Breakpoints
     2xl --> 1536px and up
 */
 function App() {
-    const [loading, isLoading] = useState(true);
-
   return (
     <div>
       <MusicPlayer />
@@ -19,5 +16,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
