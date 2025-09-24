@@ -4,7 +4,7 @@ import PlayListItem from "./PlayListItem.tsx"
 import MusicPlayer from "./MusicPlayer.tsx";
 import { useState, useRef } from 'react';
 
-export default function SongTitle({ clickedState }) {
+export default function SongTitle({ text }) {
     const songs = [
         {
             title: "Painted in Blue",
@@ -58,15 +58,12 @@ export default function SongTitle({ clickedState }) {
         },
     ]
 
-    const [title, setTitle] = useState("painted in blue")
 
-    const songRef = useRef(null);
-    const artistRef = useRef(null)
 
     return (
-        <div className="song-title 2xl:ml-70 2xl:-mt-32 xl:-mt-2 xl:ml-40 lg:-mt-5 lg:ml-15 md:mt-1 md:mb-6 md:ml-6 sm:mb-6 sm:ml-6">
-            <h1 className="text-2xl font-bold" ref={songRef}>{title}</h1>
-            <p className="font-normal mt-2 text-crimson desc-text" ref={artistRef}>Soul Canvas</p>
+        <div className="song-title 2xl:ml-121 2xl:-mt-75 xl:-mt-2 xl:ml-40 lg:-mt-5 lg:ml-15 md:mt-1 md:mb-6 md:ml-6 sm:mb-6 sm:ml-6">
+            <h1 className="text-2xl font-bold">{text}</h1>
+            <p className="font-normal mt-2 text-crimson desc-text">Soul Canvas</p>
             <div className="play 2xl:mt-6 xl:mt-6 xl:ml-3 lg:ml-2 lg:mt-6 md:ml-5 md:mt-5 sm:mt-5 sm:ml-4">
                 <PlayControls />
             </div>

@@ -19,6 +19,9 @@
 .playlist-header {
     background-color: red;
 }
+.volume-controls input {
+    accent-color: red;
+}
 
 @theme {
   --color-white: #FFFFFF; /* white */
