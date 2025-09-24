@@ -71,7 +71,7 @@ export default function PlayListItem() {
     <div className="">
       <h1 className="sm:mt-6 sm:ml-5 bg-white">Playlist</h1>
       <div className="md:-mt-8 sm:-mt-6">
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={SelectChangeOne}>
+        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={SelectChangeOne} >
           <div className="font-medium sm:mt-8">
             <p className="desc-text">PAINTED IN BLUE</p>
             <p className="text-crimson text-sm desc-text italic">Soul Canvas</p>

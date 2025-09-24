@@ -1,12 +1,6 @@
 import Footer from "./Footer.tsx";
 import MusicPlayer from "./MusicPlayer.tsx";
-import CoverArt from "./CoverArt.tsx";
-import SongTitle from "./SongTitle.tsx";
-import PlayListItem from "./PlayListItem.tsx";
-import LoadingSkeleton from "./LoadingSkeleton.jsx";
-
 import { useState } from 'react';
-
 /*
 Tailwind Breakpoints
     sm --> 640px and up
@@ -15,7 +9,6 @@ Tailwind Breakpoints
     xl --> 1280px and up
     2xl --> 1536px and up
 */
-// still need to do dark mode
 function App() {
     const [loading, isLoading] = useState(true);
 
