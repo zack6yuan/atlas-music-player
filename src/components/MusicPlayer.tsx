@@ -4,59 +4,69 @@ import PlayListItem from "./PlayListItem";
 import { useState } from 'react';
 
 export default function MusicPlayer() {
-    const [text, setText] = useState('No Song Selected')
+    const [text, setText] = useState('Painted in Blue');
     const [artist, setArtist] = useState('No Artist')
 
     const songs = [
         {
             title: "Painted in Blue",
             artist: 'Soul Canvas',
-            length: '05:55'
+            length: '05:55',
+            cover: ''
         },
         {
             title: "Tidal Drift",
             artist: 'Echoes of the Sea',
-            length: '08:02'
+            length: '08:02',
+            cover: ''
         },
         {
             title: "Facing Shadows",
             artist: 'The Emberlight',
-            length: '03:01'
+            length: '03:01',
+            cover: 'https://utfs.io/f/E9fJnaKtTy1bV09oPkISuh6fWpNsTRlAk1Qj9yqnVzCi32BL',
         },
         {
             title: "Cosmic Drift",
             artist: 'Solar Flare',
-            length: '05:01'
+            length: '05:01',
+            cover: ''
         },
         {
             title: "Urban Seranade",
             artist: 'Midnight Groove',
-            length: '04:54'
+            length: '04:54',
+            cover: ''
         },
         {
             title: "Whispers in the Wind",
             artist: 'Rust & Ruin',
-            length: '06:13'
+            length: '06:13',
+            cover: ''
         },
         {
             title: "Electric Fever",
             artist: 'Neon Jungle',
-            length: '08:41'
+            length: '08:41',
+            cover: ''
         },
         {
             title: "Electric Wildflower",
             artist: 'Velvet Ember',
-            length: '02:27'
+            length: '02:27',
+            cover: ''
         },
         {
             title: "Golden Haze",
             artist: 'Velvet Waves',
-            length: '03:15'
+            length: '03:15',
+            cover: ''
         },
         {
             title: "Shatter the Silence",
             artist: 'Thunderclap Echo',
-            length: '08:22'
+            length: '08:22',
+            cover: ''
         },
     ]
 
@@ -82,7 +92,7 @@ export default function MusicPlayer() {
     const ninthArtist = songs[8].artist;
     const tenthArtist = songs[9].artist;
 
-    
+    const firstCover = songs[0].cover;
 
   return (
     <div className="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row">
@@ -93,8 +103,8 @@ export default function MusicPlayer() {
       </div>
       {/* Playlist component */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mb-90">
-        <PlayListItem changeFirstText={() => { setText(firstTitle); setArtist(firstArtist) }}
-                                changeSecondText={() => { setText(secondTitle); setArtist(secondArtist) }}
+        <PlayListItem changeFirstText={() => setText(firstTitle)}
+                                changeSecondText={() => setText(secondTitle)}
                                 changeThirdText={() => setText(thirdTitle)}
                                 changeFourthText={() => setText(fourthTitle)}
                                 changeFifthText={() => setText(fifthTitle)}
