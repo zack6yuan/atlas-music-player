@@ -1,19 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import SongTitle from './SongTitle';
 
-export default function PlayListItem() {
-    const [song, setSong] = useState(null);
-
-    const firstRef = useRef<HTMLDivElement>(null);
-    const secondRef = useRef<HTMLDivElement>(null);
-    const thirdRef = useRef<HTMLDivElement>(null);
-    const fourthRef = useRef<HTMLDivElement>(null);
-    const fifthRef = useRef<HTMLDivElement>(null);
-    const sixthRef = useRef<HTMLDivElement>(null);
-    const seventhRef = useRef<HTMLDivElement>(null);
-    const eighthRef = useRef<HTMLDivElement>(null);
-    const ninthRef = useRef<HTMLDivElement>(null);
-    const tenthRef = useRef<HTMLDivElement>(null);
+export default function PlayListItem({ clickedState }) {
+    const [color, setColor] = useState('white');
 
     const playlistURL = 'api/v1/playlist' // playlist URL
 
@@ -69,151 +58,99 @@ export default function PlayListItem() {
             length: '08:22'
         },
     ]
-    
-
-    const SelectChangeOne = () => {
-        if (firstRef.current) {
-            firstRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeTwo = () => {
-        if (secondRef.current) {
-            secondRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeThree = () => {
-        if (thirdRef.current) {
-            thirdRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeFour = () => {
-        if (fourthRef.current) {
-            fourthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeFive = () => {
-        if (fifthRef.current) {
-            fifthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeSix = () => {
-        if (sixthRef.current) {
-            sixthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeSeven = () => {
-        if (seventhRef.current) {
-            seventhRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeEight = () => {
-        if (eighthRef.current) {
-            eighthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeNine = () => {
-        if (ninthRef.current) {
-            ninthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
-    const SelectChangeTen = () => {
-        if (tenthRef.current) {
-            tenthRef.current.style.backgroundColor = '#c9c9c9'
-        }
-    }
 
     return (
     <div className="">
       <h1 className="sm:mt-6 sm:ml-5 bg-white">Playlist</h1>
       <div className="md:-mt-8 sm:-mt-6">
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer"  ref={ firstRef } onClick={SelectChangeOne} >
+        <div id="0" className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} onClick={clickedState} >
           <div className="font-medium sm:mt-8">
-            <p className="desc-text"></p>
-            <p className="text-crimson text-sm desc-text italic">Soul Canvas</p>
+            <p className="desc-text uppercase">{songs[0].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[0].artist}</p>
           </div>
           <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">05:55</p>
+            <p className="text-gray song-length font-medium">{songs[0].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ secondRef } onClick={SelectChangeTwo}>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="desc-text">TIDAL DRIFT</p>
-            <p className="text-crimson text-sm desc-text italic">Echoes of the Sea</p>
+            <p className="desc-text uppercase">{songs[1].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[1].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">08:02</p>
+            <p className="text-gray song-length font-medium">{songs[1].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ thirdRef } onClick={ SelectChangeThree }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">FACING SHADOWS</p>
-            <p className="text-crimson text-sm desc-text italic">The Emberlight</p>
+            <p className="desc-text uppercase">{songs[2].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[2].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">03:01</p>
+            <p className="text-gray song-length font-medium">{songs[2].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fourthRef } onClick={ SelectChangeFour }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">COSMIC DRIFT</p>
-            <p className="text-crimson text-sm desc-text italic">Solar Flare</p>
+            <p className="text-base desc-text uppercase">{songs[3].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[3].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">05:01</p>
+            <p className="text-gray song-length font-medium">{songs[3].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ fifthRef } onClick={ SelectChangeFive }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">URBAN SERANADE</p>
-            <p className="text-crimson text-sm desc-text italic">Midnight Groove</p>
+            <p className="text-base desc-text uppercase">{songs[4].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[4].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">04:54</p>
+            <p className="text-gray song-length font-medium">{songs[4].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ sixthRef } onClick={ SelectChangeSix }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">WHISPERS IN THE WIND</p>
-            <p className="text-crimson text-sm desc-text italic">Rust & Ruin</p>
+            <p className="text-base desc-text uppercase">{songs[5].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[5].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">06:13</p>
+            <p className="text-gray song-length font-medium">{songs[5].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ seventhRef } onClick={ SelectChangeSeven }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">ELECTRIC FEVER</p>
-            <p className="text-crimson text-sm desc-text italic">Neon Jungle</p>
+            <p className="text-base desc-text uppercase">{songs[6].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[6].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">08:41</p>
+            <p className="text-gray song-length font-medium">{songs[6].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ eighthRef } onClick={ SelectChangeEight }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">ELECTRIC WILDFLOWER</p>
-            <p className="text-crimson text-sm desc-text italic">Velvet Ember</p>
+            <p className="text-base desc-text uppercase">{songs[7].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[7].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">02:27</p>
+            <p className="text-gray song-length font-medium">{songs[7].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" ref={ ninthRef } onClick={ SelectChangeNine }>
+        <div className="song-div flex rounded sm:mt-1 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">GOLDEN HAZE</p>
-            <p className="text-crimson desc-text italic">Velvet Waves</p>
+            <p className="text-base desc-text uppercase">{songs[8].title}</p>
+            <p className="text-crimson desc-text italic">{songs[8].artist}</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">03:15</p>
+            <p className="text-gray song-length font-medium">{songs[8].length}</p>
           </div>
         </div>
-        <div className="flex rounded sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5 cursor-pointer" ref={ tenthRef } onClick={ SelectChangeTen }>
+        <div className="flex rousong-div nded sm:mt-1 sm:mb-5 sm:mr-9 sm:ml-5 cursor-pointer" style={{ backgroundColor: color}} >
           <div className="font-medium">
-            <p className="text-base desc-text">SHATTER THE SILENCE</p>
-            <p className="text-crimson text-sm desc-text italic">Thunderclap Echo</p>
+            <p className="text-base desc-text uppercase">{songs[9].title}</p>
+            <p className="text-crimson text-sm desc-text italic">{songs[9].artist}o</p>
           </div>
           <div className="sm:mt-3 sm:mr-1 sm:ml-auto xl:mr-40 2xl:mr-70">
-            <p className="text-gray song-length font-medium">08:22</p>
+            <p className="text-gray song-length font-medium">{songs[9].length}</p>
           </div>
         </div>
       </div>
