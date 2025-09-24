@@ -39,7 +39,7 @@ export default function PlayControls() {
   }
 
   return (
-    <div className="play-controls flex sm:gap-22 md:gap-8 lg:gap-14.5 xl:gap-16 2xl:gap-14.5">
+    <div className="play-controls flex sm:gap-22 md:gap-8 lg:gap-14 lg:ml-2 lg:-mt-4 xl:gap-14.5 2xl:gap-14.5">
       <p onClick={ setSongSpeed } className="cursor-pointer select-none sm:mt-5 w-3 desc-text">{ speed }</p>
       <img src={ previous } alt="previous-icon" className="cursor-pointer" />
       <img src={ playing } alt="play-icon" className="rounded-lg border-3 p-4 cursor-pointer w-15 h-15" onClick={ setPlay }/>

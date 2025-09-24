@@ -1,9 +1,12 @@
-import placeholder from "../assets/placeholder.svg"
+import { useState } from 'react';
 
-export default function CoverArt() {
+type coverProps = {
+    cover: 'string'
+}
+export default function CoverArt({cover}: coverProps) {
     return (
-        <div className="cover-art 2xl:scale-39 2xl:-mt-72 2xl:-mr-95 xl:scale-90 xl:mt-1 xl:ml-33 lg:scale-80 lg:-mt-6 lg:ml-3 md:scale-85 md:-mt-2 md:-ml-1 sm:scale-92">
-            <img src="https://utfs.io/f/E9fJnaKtTy1bOclGsk1hB7xMLwUVFDiXypZukQrcnYbgdEv6" alt="" className="rounded-xl"/>
+        <div className="cover-art 2xl:scale-39 xl:scale-120 xl:mt-13 xl:ml-14 xl:mr-13 lg:scale-90 lg:-mt-0 lg:ml-0 md:scale-85 md:-mt-2 md:-ml-1 sm:scale-92">
+            <img src={cover} alt="" className="rounded-xl"/>
         </div>
     )
 }
