@@ -3,12 +3,11 @@
 exports[`Cover Art renders correctly 1`] = `
 <div>
   <div
-    class="cover-art 2xl:scale-39 xl:scale-120 xl:mt-13 xl:ml-14 xl:mr-13 lg:scale-90 lg:-mt-0 lg:ml-0 md:scale-85 md:-mt-2 md:-ml-1 sm:scale-92"
+    class="cover-art 2xl:scale-118 xl:scale-120 xl:mt-13 xl:ml-14 xl:mr-13 lg:scale-90 lg:-mt-0 lg:ml-0 md:scale-85 md:-mt-2 md:-ml-1 sm:scale-92"
   >
     <img
       alt=""
       class="rounded-xl"
-      src="https://utfs.io/f/E9fJnaKtTy1bOclGsk1hB7xMLwUVFDiXypZukQrcnYbgdEv6"
     />
   </div>
 </div>

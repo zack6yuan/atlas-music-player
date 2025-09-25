@@ -5,20 +5,29 @@ exports[`Play List Item renders correctly 1`] = `
   <div
     class=""
   >
-    <h1
-      class="bg-white sm:mt-6 sm:ml-5"
+    <div
+      class="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
+      id="0"
     >
-      Playlist
-    </h1>
+      <div
+        class="font-medium sm:mt-8 xl:mt-11"
+      >
+        <p
+          class="desc-text uppercase"
+        >
+          Playlist
+        </p>
+      </div>
+    </div>
     <div
       class="sm:-mt-6 md:-mt-8 lg:-mt-5 xl:-mt-10"
     >
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
+        class="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
         id="0"
       >
         <div
-          class="font-medium sm:mt-8 xl:mt-14 2xl:mt-13"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
             class="desc-text uppercase"
@@ -36,7 +45,7 @@ exports[`Play List Item renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -46,11 +55,11 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
             class="desc-text uppercase"
@@ -68,7 +77,7 @@ exports[`Play List Item renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -78,25 +87,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
             class="desc-text uppercase"
           >
             Facing Shadows
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            The Emberlight
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              The Emberlight
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -106,25 +119,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Cosmic Drift
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Solar Flare
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Solar Flare
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -134,25 +151,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Urban Seranade
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Midnight Groove
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Midnight Groove
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -162,25 +183,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Whispers in the Wind
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Rust & Ruin
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Rust & Ruin
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -190,25 +215,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Electric Fever
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Neon Jungle
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Neon Jungle
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -218,25 +247,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Electric Wildflower
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Velvet Ember
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Velvet Ember
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -246,25 +279,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Golden Haze
           </p>
-          <p
-            class="text-crimson desc-text italic"
+          <div
+            class=""
           >
-            Velvet Waves
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Velvet Waves
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
@@ -274,26 +311,29 @@ exports[`Play List Item renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="rousong-div nded flex cursor-pointer sm:mt-1 sm:mr-9 sm:mb-5 sm:ml-5"
-        style="background-color: white;"
+        class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 sm:mb-5 xl:-mt-13"
+        id="0"
       >
         <div
-          class="font-medium"
+          class="font-medium sm:mt-8 xl:mt-14"
         >
           <p
-            class="desc-text text-base uppercase"
+            class="desc-text uppercase"
           >
             Shatter the Silence
           </p>
-          <p
-            class="text-crimson desc-text text-sm italic"
+          <div
+            class=""
           >
-            Thunderclap Echo
-            o
-          </p>
+            <p
+              class="text-crimson desc-text text-sm italic"
+            >
+              Thunderclap Echo
+            </p>
+          </div>
         </div>
         <div
-          class="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110"
+          class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
         >
           <p
             class="text-gray song-length font-medium"
