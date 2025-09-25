@@ -14,10 +14,10 @@ export default function Footer() {
     const changeTheme = () => {
         if (theme === 'light') {
             setTheme('dark');
-            setImage(moon);
+            setImage(sun);
         } else {
             setTheme('light')
-            setImage(sun);
+            setImage(moon);
         }
     }
 
