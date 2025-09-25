@@ -31,7 +31,7 @@ export default function Footer() {
             &copy; {year} Atlas School
         </div>
         <div className="flex justify-center theme-button text-center sm:mb-15 sm:-mt-5 md:-mt-6 cursor-pointer">
-            <img id="theme-toggle" src={ image } onClick={ changeTheme } alt="theme-image" />
+            <img id="theme-toggle" src={ image } onClick={ changeTheme } alt="theme-toggler" />
         </div>
     </div>
   );

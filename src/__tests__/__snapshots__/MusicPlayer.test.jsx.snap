@@ -1,0 +1,436 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Music Player renders correctly 1`] = `
+<div>
+  <div
+    class="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row 2xl:ml-71 2xl:-mr-50"
+  >
+    <div
+      class="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mb-90 lg:ml-9 xl:ml-40 xl:w-[450px] 2xl:w-[450px]"
+    >
+      <div
+        class="cover-art 2xl:scale-118 xl:scale-120 xl:mt-13 xl:ml-14 xl:mr-13 lg:scale-90 lg:-mt-0 lg:ml-0 md:scale-85 md:-mt-2 md:-ml-1 sm:scale-92"
+      >
+        <img
+          alt=""
+          class="rounded-xl"
+          src="https://utfs.io/f/E9fJnaKtTy1bOclGsk1hB7xMLwUVFDiXypZukQrcnYbgdEv6"
+        />
+      </div>
+      <div
+        class="song-title 2xl:ml-7 xl:mt-15 xl:ml-6 lg:mt-2 lg:ml-6 md:mt-1 md:mb-6 md:ml-6 sm:mb-6 sm:ml-6"
+      >
+        <h1
+          class="text-2xl font-bold"
+        >
+          Painted in Blue
+        </h1>
+        <p
+          class="font-normal mt-2 text-crimson desc-text"
+        >
+          Soul Canvas
+        </p>
+        <div
+          class="play 2xl:mt-6 xl:mt-6 xl:ml-0 lg:ml-2 lg:mt-6 md:ml-5 md:mt-5 sm:mt-5 sm:ml-4"
+        >
+          <div
+            class="play-controls flex sm:gap-22 md:gap-8 lg:gap-14 lg:ml-2 lg:-mt-4 xl:gap-14.5 2xl:gap-14.5"
+          >
+            <p
+              class="cursor-pointer select-none sm:mt-5 w-3 desc-text"
+              data-testid="speed-setter"
+            >
+              1x
+            </p>
+            <img
+              alt="previous-icon"
+              class="cursor-pointer"
+              src=""
+            />
+            <img
+              alt="play-icon"
+              class="rounded-lg border-3 p-4 cursor-pointer w-15 h-15"
+              src="data:image/svg+xml,%3csvg%20width='16'%20height='20'%20viewBox='0%200%2016%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L15%2010L1%2019V1Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
+            />
+            <img
+              alt="next-icon"
+              class="cursor-pointer"
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_263_108)'%3e%3cpath%20d='M12%2019L21%2012L12%205V19Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M1%2019L10%2012L1%205V19Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_263_108'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            />
+            <img
+              alt="shuffle-icon"
+              class="cursor-pointer"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='lucide%20lucide-shuffle-icon%20lucide-shuffle'%3e%3cpath%20d='m18%2014%204%204-4%204'/%3e%3cpath%20d='m18%202%204%204-4%204'/%3e%3cpath%20d='M2%2018h1.973a4%204%200%200%200%203.3-1.7l5.454-8.6a4%204%200%200%201%203.3-1.7H22'/%3e%3cpath%20d='M2%206h1.972a4%204%200%200%201%203.6%202.2'/%3e%3cpath%20d='M22%2018h-6.041a4%204%200%200%201-3.3-1.8l-.359-.45'/%3e%3c/svg%3e"
+            />
+          </div>
+        </div>
+        <div
+          class="volume 2xl:mt-6 2xl:-ml-3 xl:mt-3 xl:-ml-3 xl:mr-6 lg:mt-6 lg:-ml-3 md:mt-5 md:-ml-3 sm:mt-6 sm:-ml-2"
+        >
+          <div
+            class="volume-controls flex"
+          >
+            <img
+              alt="volume-icon"
+              class="mx-3 "
+              src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_263_122)'%3e%3cpath%20d='M11%204.702C10.9998%204.56271%2010.9583%204.42661%2010.8809%204.31086C10.8034%204.19511%2010.6934%204.1049%2010.5647%204.05163C10.436%203.99835%2010.2944%203.98439%2010.1577%204.01151C10.0211%204.03863%209.89559%204.10561%209.797%204.204L6.413%207.587C6.2824%207.71838%206.12703%207.82253%205.95589%207.89343C5.78475%207.96432%205.60124%208.00054%205.416%208H3C2.73478%208%202.48043%208.10536%202.29289%208.29289C2.10536%208.48043%202%208.73479%202%209V15C2%2015.2652%202.10536%2015.5196%202.29289%2015.7071C2.48043%2015.8946%202.73478%2016%203%2016H5.416C5.60124%2015.9995%205.78475%2016.0357%205.95589%2016.1066C6.12703%2016.1775%206.2824%2016.2816%206.413%2016.413L9.796%2019.797C9.8946%2019.8958%2010.0203%2019.9631%2010.1572%2019.9904C10.2941%2020.0177%2010.436%2020.0037%2010.5649%2019.9503C10.6939%2019.8968%2010.804%2019.8063%2010.8815%2019.6902C10.959%2019.5741%2011.0002%2019.4376%2011%2019.298V4.702Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M16%209C16.6491%209.86548%2017%2010.9181%2017%2012C17%2013.0819%2016.6491%2014.1345%2016%2015'%20fill='black'/%3e%3cpath%20d='M16%209C16.6491%209.86548%2017%2010.9181%2017%2012C17%2013.0819%2016.6491%2014.1345%2016%2015'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M19.364%2018.364C20.1998%2017.5283%2020.8627%2016.5361%2021.315%2015.4442C21.7673%2014.3522%2022.0001%2013.1819%2022.0001%2012C22.0001%2010.8181%2021.7673%209.64776%2021.315%208.55582C20.8627%207.46389%2020.1998%206.47173%2019.364%205.636'%20fill='black'/%3e%3cpath%20d='M19.364%2018.364C20.1998%2017.5283%2020.8627%2016.5361%2021.315%2015.4442C21.7673%2014.3522%2022.0001%2013.1819%2022.0001%2012C22.0001%2010.8181%2021.7673%209.64776%2021.315%208.55582C20.8627%207.46389%2020.1998%206.47173%2019.364%205.636'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_263_122'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+            />
+            <input
+              class="accent-crimson 2xl:w-90 xl:w-96 lg:w-90 md:w-67 sm:w-122"
+              max="100"
+              min="0"
+              type="range"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mr-9 lg:mb-90 xl:mr-40 xl:w-[450px] 2xl:mr-120 2xl:w-[450px]"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
+          id="0"
+        >
+          <div
+            class="font-medium sm:mt-8 xl:mt-11"
+          >
+            <p
+              class="desc-text uppercase"
+            >
+              Playlist
+            </p>
+          </div>
+        </div>
+        <div
+          class="sm:-mt-6 md:-mt-8 lg:-mt-5 xl:-mt-10"
+        >
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Painted in Blue
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Soul Canvas
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                05:55
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Tidal Drift
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Echoes of the Sea
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                08:02
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Facing Shadows
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  The Emberlight
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                03:01
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Cosmic Drift
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Solar Flare
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                05:01
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Urban Seranade
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Midnight Groove
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                04:54
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Whispers in the Wind
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Rust & Ruin
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                06:13
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Electric Fever
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Neon Jungle
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                08:41
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Electric Wildflower
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Velvet Ember
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                02:27
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Golden Haze
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Velvet Waves
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                03:15
+              </p>
+            </div>
+          </div>
+          <div
+            class="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 sm:mb-5 xl:-mt-13"
+            id="0"
+          >
+            <div
+              class="font-medium sm:mt-8 xl:mt-14"
+            >
+              <p
+                class="desc-text uppercase"
+              >
+                Shatter the Silence
+              </p>
+              <div
+                class=""
+              >
+                <p
+                  class="text-crimson desc-text text-sm italic"
+                >
+                  Thunderclap Echo
+                </p>
+              </div>
+            </div>
+            <div
+              class="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2"
+            >
+              <p
+                class="text-gray song-length font-medium"
+              >
+                08:22
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

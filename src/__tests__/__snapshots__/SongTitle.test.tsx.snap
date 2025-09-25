@@ -19,6 +19,7 @@ exports[`Song Title renders correctly 1`] = `
       >
         <p
           class="cursor-pointer select-none sm:mt-5 w-3 desc-text"
+          data-testid="speed-setter"
         >
           1x
         </p>
