@@ -3,7 +3,7 @@ import SongTitle from "./SongTitle";
 import PlayListItem from "./PlayListItem";
 import { useState } from "react";
 
-export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, secondSongClick, playlistSongs, startSong} ) {
+export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, secondSongClick, playlistSongs, startSong, changeSpeed, playingStatus} ) {
   const items = [
     {
       title: "Painted in Blue",
@@ -109,7 +109,7 @@ export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, s
       {/* Currently playing components */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mb-90 lg:ml-9 xl:ml-40 xl:w-[450px] 2xl:w-[450px]">
         <CoverArt cover={cover}/>
-        <SongTitle text={text} artist={artist} prevImage={prevImage} setPrevImage={setPrevImage} startSong={startSong}/>
+        <SongTitle text={text} artist={artist} prevImage={prevImage} setPrevImage={setPrevImage} startSong={startSong} changeSpeed={changeSpeed} playingStatus={playingStatus}/>
       </div>
       {/* Playlist component */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mr-9 lg:mb-90 xl:mr-40 xl:w-[450px] 2xl:mr-120 2xl:w-[450px]">

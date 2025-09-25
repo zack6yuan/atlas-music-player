@@ -28,6 +28,7 @@ function App() {
   const [prevImage, setPrevImage] = useState(previous);
   const [playing, setPlaying] = useState(false);
   const [song, setSong] = useState(songs.one);
+  const [speed, setSpeed] = useState(1.0);
 
   const handleFirstSongClick = () => {
     setSong(songs.one);
@@ -43,6 +44,16 @@ function App() {
     setPlaying(!playing)
   }
 
+  const handleSpeedChange = () => {
+    if (speed === 1.0) {
+        setSpeed(2.0);
+    } else if (speed === 2.0) {
+        setSpeed(0.5);
+    } else if (speed === 0.5) {
+        setSpeed(1.0);
+    }
+  };
+
   function nextSong() {
     alert("next song");
   }
@@ -55,12 +66,14 @@ function App() {
         secondSongClick={handleSecondSongClick}
         playlistSongs={songs}
         startSong={setPlaying}
+        changeSpeed={handleSpeedChange}
+        playingStatus={setPlayingStatus}
       />
       <AudioPlayer
         song={song}
         playing={playing}
         volume={50}
-        speed={1.0}
+        speed={speed}
         onEnd={nextSong}
       />
       <Footer />
