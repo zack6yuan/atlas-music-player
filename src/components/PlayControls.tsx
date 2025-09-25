@@ -1,13 +1,12 @@
 import { useState } from 'react';
 
-import previous from "../assets/previous.svg";
 import play from "../assets/play.svg";
 import pause from "../assets/pause.svg";
 import next from "../assets/next.svg";
 import shuffle from "../assets/shuffle.svg";
 import shuffleClicked from "../assets/shuffle-clicked.svg";
 
-export default function PlayControls() {
+export default function PlayControls( {prevImage, togglePlaying}) {
   const [image, setImage] = useState(shuffle);
   const [playing, setPlaying] = useState(play);
   const [speed, setSpeed] = useState("1x");
@@ -23,6 +22,7 @@ export default function PlayControls() {
   const setPlay = () => {
     if (playing === pause) {
         setPlaying(play);
+        togglePlaying();
     } else {
         setPlaying(pause);
     }
@@ -41,7 +41,7 @@ export default function PlayControls() {
   return (
     <div className="play-controls flex sm:gap-22 md:gap-8 lg:gap-14 lg:ml-2 lg:-mt-4 xl:gap-14.5 2xl:gap-14.5">
       <p onClick={ setSongSpeed } className="cursor-pointer select-none sm:mt-5 w-3 desc-text">{ speed }</p>
-      <img src={ previous } alt="previous-icon" className="cursor-pointer" />
+      <img src={ prevImage } alt="previous-icon" className="cursor-pointer" />
       <img src={ playing } alt="play-icon" className="rounded-lg border-3 p-4 cursor-pointer w-15 h-15" onClick={ setPlay }/>
       <img src={ next } alt="next-icon" className="cursor-pointer" />
       <img src={ image } alt="shuffle-icon" className="cursor-pointer" onClick={ changeImage }/>

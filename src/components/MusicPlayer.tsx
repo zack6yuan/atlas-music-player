@@ -3,8 +3,8 @@ import SongTitle from "./SongTitle";
 import PlayListItem from "./PlayListItem";
 import { useState } from "react";
 
-export default function MusicPlayer() {
-  const songs = [
+export default function MusicPlayer( {prevImage, setPrevImage, songClick, playlistSongs, togglePlaying} ) {
+  const items = [
     {
       title: "Painted in Blue",
       artist: "Soul Canvas",
@@ -69,47 +69,47 @@ export default function MusicPlayer() {
 
   const [text, setText] = useState("Painted in Blue");
   const [artist, setArtist] = useState("Soul Canvas");
-  const [cover, setCover] = useState(songs[0].cover);
+  const [cover, setCover] = useState(items[0].cover);
 
-  const firstTitle = songs[0].title;
-  const secondTitle = songs[1].title;
-  const thirdTitle = songs[2].title;
-  const fourthTitle = songs[3].title;
-  const fifthTitle = songs[4].title;
-  const sixthTitle = songs[5].title;
-  const seventhTitle = songs[6].title;
-  const eighthTitle = songs[7].title;
-  const ninthTitle = songs[8].title;
-  const tenthTitle = songs[9].title;
+  const firstTitle = items[0].title;
+  const secondTitle = items[1].title;
+  const thirdTitle = items[2].title;
+  const fourthTitle = items[3].title;
+  const fifthTitle = items[4].title;
+  const sixthTitle = items[5].title;
+  const seventhTitle = items[6].title;
+  const eighthTitle = items[7].title;
+  const ninthTitle = items[8].title;
+  const tenthTitle = items[9].title;
 
-  const firstArtist = songs[0].artist;
-  const secondArtist = songs[1].artist;
-  const thirdArtist = songs[2].artist;
-  const fourthArtist = songs[3].artist;
-  const fifthArtist = songs[4].artist;
-  const sixthArtist = songs[5].artist;
-  const seventhArtist = songs[6].artist;
-  const eighthArtist = songs[7].artist;
-  const ninthArtist = songs[8].artist;
-  const tenthArtist = songs[9].artist;
+  const firstArtist = items[0].artist;
+  const secondArtist = items[1].artist;
+  const thirdArtist = items[2].artist;
+  const fourthArtist = items[3].artist;
+  const fifthArtist = items[4].artist;
+  const sixthArtist = items[5].artist;
+  const seventhArtist = items[6].artist;
+  const eighthArtist = items[7].artist;
+  const ninthArtist = items[8].artist;
+  const tenthArtist = items[9].artist;
 
-  const firstCover = songs[0].cover;
-  const secondCover = songs[1].cover;
-  const thirdCover = songs[2].cover;
-  const fourthCover = songs[3].cover;
-  const fifthCover = songs[4].cover;
-  const sixthCover = songs[5].cover;
-  const seventhCover = songs[6].cover;
-  const eighthCover = songs[7].cover;
-  const ninthCover = songs[8].cover;
-  const tenthCover = songs[9].cover;
+  const firstCover = items[0].cover;
+  const secondCover = items[1].cover;
+  const thirdCover = items[2].cover;
+  const fourthCover = items[3].cover;
+  const fifthCover = items[4].cover;
+  const sixthCover = items[5].cover;
+  const seventhCover = items[6].cover;
+  const eighthCover = items[7].cover;
+  const ninthCover = items[8].cover;
+  const tenthCover = items[9].cover;
 
   return (
     <div className="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row 2xl:ml-31">
       {/* Currently playing components */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mb-90 lg:ml-9 xl:ml-40 xl:w-[450px] 2xl:w-[450px]">
         <CoverArt cover={cover}/>
-        <SongTitle text={text} artist={artist} />
+        <SongTitle text={text} artist={artist} prevImage={prevImage} setPrevImage={setPrevImage} togglePlaying={togglePlaying}/>
       </div>
       {/* Playlist component */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mr-9 lg:mb-90 xl:mr-40 xl:w-[450px] 2xl:mr-120 2xl:w-[450px]">
@@ -118,11 +118,13 @@ export default function MusicPlayer() {
             setText(firstTitle);
             setArtist(firstArtist);
             setCover(firstCover);
+            songClick();
           }}
           changeSecondSong={() => {
             setText(secondTitle);
             setArtist(secondArtist);
             setCover(secondCover);
+            songClick();
           }}
           changeThirdSong={() => {
             setText(thirdTitle);
