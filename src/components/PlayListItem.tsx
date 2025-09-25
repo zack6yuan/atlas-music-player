@@ -13,6 +13,7 @@ export default function PlayListItem({
     changeEighthSong,
     changeNinthSong,
     changeTenthSong,
+    playlistSongs,
 }) {
   const [color, setColor] = useState("white");
 
@@ -76,9 +77,8 @@ export default function PlayListItem({
      <div
           id="0"
           className="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
-          onClick={ changeFirstSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-11">
             <p className="desc-text uppercase">Playlist</p>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function PlayListItem({
           className="song-div flex cursor-pointer rounded sm:-mt-5 sm:mr-9 sm:ml-5"
           onClick={ changeFirstSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[0].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -96,7 +96,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[0].length}
             </p>
@@ -104,10 +104,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeSecondSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[1].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -115,7 +115,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[1].length}
             </p>
@@ -123,10 +123,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeThirdSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[2].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -134,7 +134,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[2].length}
             </p>
@@ -142,10 +142,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeFourthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[3].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -153,7 +153,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[3].length}
             </p>
@@ -161,10 +161,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeFifthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[4].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -172,7 +172,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[4].length}
             </p>
@@ -180,10 +180,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeSixthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[5].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -191,7 +191,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[5].length}
             </p>
@@ -199,10 +199,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeSeventhSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[6].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -210,7 +210,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[6].length}
             </p>
@@ -218,10 +218,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeEighthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[7].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -229,7 +229,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[7].length}
             </p>
@@ -237,10 +237,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 xl:-mt-13"
           onClick={ changeNinthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[8].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -248,7 +248,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[8].length}
             </p>
@@ -256,10 +256,10 @@ export default function PlayListItem({
         </div>
         <div
           id="0"
-          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 sm:mb-5"
+          className="song-div flex cursor-pointer rounded sm:-mt-7 sm:mr-9 sm:ml-5 sm:mb-5 xl:-mt-13"
           onClick={ changeTenthSong }
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium sm:mt-8 xl:mt-14">
             <p className="desc-text uppercase">{songs[9].title}</p>
             <div className="">
               <p className="text-crimson desc-text text-sm italic">
@@ -267,7 +267,7 @@ export default function PlayListItem({
               </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2">
             <p className="text-gray song-length font-medium">
               {songs[9].length}
             </p>

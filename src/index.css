@@ -31,6 +31,15 @@ body.dark {
     background-color: black;
 }
 
+.normal-color {
+    background-color: white;
+}
+
+.clicked-color {
+    background-color: crimson;
+    opacity: 20;
+}
+
 @theme {
   --color-white: #FFFFFF; /* white */
   --color-gray: #333333; /* dark gray */

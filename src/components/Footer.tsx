@@ -15,16 +15,18 @@ export default function Footer() {
         if (theme === 'light') {
             setTheme('dark');
             setImage(sun);
+            console.log('Dark Mode Active')
         } else {
             setTheme('light')
             setImage(moon);
+            console.log('Light Mode Active')
         }
     }
 
 
   const year = new Date().getFullYear();
   return (
-    <div className="sm:-mt-60 md:-mt-92">
+    <div className="sm:-mt-60 md:-mt-92 2xl:-mt-130">
         <div className="desc-text text-center p-8 sm:mt-50">
             &copy; {year} Atlas School
         </div>

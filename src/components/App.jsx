@@ -29,10 +29,15 @@ function App() {
   const [playing, setPlaying] = useState(false);
   const [song, setSong] = useState(songs.one);
 
-  const handleSongClick = (url) => {
-    setSong(url);
+  const handleFirstSongClick = () => {
+    setSong(songs.one);
     setPlaying(true);
   };
+
+  const handleSecondSongClick = () => {
+    setSong(songs.two);
+    setPlaying(true);
+  }
 
   const setPlayingStatus = () => {
     setPlaying(!playing)
@@ -46,9 +51,10 @@ function App() {
       <MusicPlayer
         prevImage={prevImage}
         setPrevImage={setPrevImage}
-        songClick={handleSongClick}
+        firstSongClick={handleFirstSongClick}
+        secondSongClick={handleSecondSongClick}
         playlistSongs={songs}
-        togglePlaying={setPlaying}
+        startSong={setPlaying}
       />
       <AudioPlayer
         song={song}

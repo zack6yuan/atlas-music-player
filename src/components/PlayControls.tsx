@@ -6,7 +6,7 @@ import next from "../assets/next.svg";
 import shuffle from "../assets/shuffle.svg";
 import shuffleClicked from "../assets/shuffle-clicked.svg";
 
-export default function PlayControls( {prevImage, togglePlaying}) {
+export default function PlayControls( {prevImage, startSong}) {
   const [image, setImage] = useState(shuffle);
   const [playing, setPlaying] = useState(play);
   const [speed, setSpeed] = useState("1x");
@@ -22,7 +22,7 @@ export default function PlayControls( {prevImage, togglePlaying}) {
   const setPlay = () => {
     if (playing === pause) {
         setPlaying(play);
-        togglePlaying();
+        startSong();
     } else {
         setPlaying(pause);
     }
