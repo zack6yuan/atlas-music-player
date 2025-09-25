@@ -1,6 +1,9 @@
 import volumeIcon from "../assets/volume.svg";
+import { useState } from 'react';
 
 export default function VolumeControls() {
+    const [volume, setVolume] = useState(50);
+
     return (
         <div className="volume-controls flex">
             <img src={ volumeIcon } alt="volume-icon" className="mx-3 "/>
