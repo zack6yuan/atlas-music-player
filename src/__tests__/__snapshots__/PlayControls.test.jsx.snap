@@ -33,37 +33,3 @@ exports[`Play Controls render correctly 1`] = `
   </div>
 </div>
 `;
-
-exports[`Speed button changes speed 1`] = `
-<div>
-  <div
-    class="play-controls flex sm:gap-22 md:gap-8 lg:gap-14 lg:ml-2 lg:-mt-4 xl:gap-14.5 2xl:gap-14.5"
-  >
-    <p
-      class="cursor-pointer select-none sm:mt-5 w-3 desc-text"
-      data-testid="speed-setter"
-    >
-      1x
-    </p>
-    <img
-      alt="previous-icon"
-      class="cursor-pointer"
-    />
-    <img
-      alt="play-icon"
-      class="rounded-lg border-3 p-4 cursor-pointer w-15 h-15"
-      src="data:image/svg+xml,%3csvg%20width='16'%20height='20'%20viewBox='0%200%2016%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201L15%2010L1%2019V1Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e"
-    />
-    <img
-      alt="next-icon"
-      class="cursor-pointer"
-      src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_263_108)'%3e%3cpath%20d='M12%2019L21%2012L12%205V19Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M1%2019L10%2012L1%205V19Z'%20fill='black'%20stroke='black'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_263_108'%3e%3crect%20width='24'%20height='24'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
-    />
-    <img
-      alt="shuffle-icon"
-      class="cursor-pointer"
-      src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20stroke='currentColor'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='lucide%20lucide-shuffle-icon%20lucide-shuffle'%3e%3cpath%20d='m18%2014%204%204-4%204'/%3e%3cpath%20d='m18%202%204%204-4%204'/%3e%3cpath%20d='M2%2018h1.973a4%204%200%200%200%203.3-1.7l5.454-8.6a4%204%200%200%201%203.3-1.7H22'/%3e%3cpath%20d='M2%206h1.972a4%204%200%200%201%203.6%202.2'/%3e%3cpath%20d='M22%2018h-6.041a4%204%200%200%201-3.3-1.8l-.359-.45'/%3e%3c/svg%3e"
-    />
-  </div>
-</div>
-`;

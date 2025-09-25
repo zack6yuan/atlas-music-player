@@ -15,4 +15,6 @@ test("Theme changes when button is clicked", () => {
     const button = screen.getAllByAltText("theme-toggler")
     fireEvent.click(button[0])
     expect(container).toMatchSnapshot();
+    fireEvent.click(button[0])
+    expect(container).toMatchSnapshot();
 })
