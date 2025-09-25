@@ -23,6 +23,20 @@
     accent-color: red;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.song-div.dark {
+    background-color: black;
+}
+
 @theme {
   --color-white: #FFFFFF; /* white */
   --color-gray: #333333; /* dark gray */
