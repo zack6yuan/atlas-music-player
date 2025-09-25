@@ -4,6 +4,11 @@ import VolumeControls from "./VolumeControls.tsx";
 type titleProps = {
     text: string;
     artist: string;
+    prevImage: string;
+    setPrevImage: () => void;
+    startSong: () => void;
+    changeSpeed: () => void;
+    playingStatus: boolean;
 }
 
 export default function SongTitle({ text, artist, prevImage, setPrevImage, startSong, changeSpeed, playingStatus }: titleProps) {

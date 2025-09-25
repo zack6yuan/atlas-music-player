@@ -3,7 +3,18 @@ import SongTitle from "./SongTitle";
 import PlayListItem from "./PlayListItem";
 import { useState } from "react";
 
-export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, secondSongClick, playlistSongs, startSong, changeSpeed, playingStatus} ) {
+type playerProps = {
+    prevImage: string;
+    setPrevImage: () => void;
+    firstSongClick: () => void;
+    secondSongClick: () => void;
+    playlistSongs: string;
+    startSong: () => void;
+    changeSpeed: () => void;
+    playingStatus: boolean;
+}
+
+export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, secondSongClick, playlistSongs, startSong, changeSpeed, playingStatus}: playerProps ) {
   const items = [
     {
       title: "Painted in Blue",

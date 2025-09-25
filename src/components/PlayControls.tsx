@@ -6,7 +6,13 @@ import next from "../assets/next.svg";
 import shuffle from "../assets/shuffle.svg";
 import shuffleClicked from "../assets/shuffle-clicked.svg";
 
-export default function PlayControls( {prevImage, startSong, changeSpeed, playingStatus}) {
+type controlsProps = {
+    prevImage: string;
+    changeSpeed: () => void;
+    playingStatus: boolean;
+}
+
+export default function PlayControls({ prevImage, changeSpeed, playingStatus }: controlsProps) {
   const [image, setImage] = useState(shuffle);
   const [playing, setPlaying] = useState(play);
   const [speed, setSpeed] = useState("1x");
