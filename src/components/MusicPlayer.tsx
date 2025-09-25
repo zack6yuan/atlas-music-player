@@ -82,41 +82,8 @@ export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, s
   const [artist, setArtist] = useState("Soul Canvas");
   const [cover, setCover] = useState(items[0].cover);
 
-  const firstTitle = items[0].title;
-  const secondTitle = items[1].title;
-  const thirdTitle = items[2].title;
-  const fourthTitle = items[3].title;
-  const fifthTitle = items[4].title;
-  const sixthTitle = items[5].title;
-  const seventhTitle = items[6].title;
-  const eighthTitle = items[7].title;
-  const ninthTitle = items[8].title;
-  const tenthTitle = items[9].title;
-
-  const firstArtist = items[0].artist;
-  const secondArtist = items[1].artist;
-  const thirdArtist = items[2].artist;
-  const fourthArtist = items[3].artist;
-  const fifthArtist = items[4].artist;
-  const sixthArtist = items[5].artist;
-  const seventhArtist = items[6].artist;
-  const eighthArtist = items[7].artist;
-  const ninthArtist = items[8].artist;
-  const tenthArtist = items[9].artist;
-
-  const firstCover = items[0].cover;
-  const secondCover = items[1].cover;
-  const thirdCover = items[2].cover;
-  const fourthCover = items[3].cover;
-  const fifthCover = items[4].cover;
-  const sixthCover = items[5].cover;
-  const seventhCover = items[6].cover;
-  const eighthCover = items[7].cover;
-  const ninthCover = items[8].cover;
-  const tenthCover = items[9].cover;
-
   return (
-    <div className="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row 2xl:ml-71 2xl:-mr-6">
+    <div className="flex h-full min-h-screen flex-col justify-between p-8 md:flex-row 2xl:ml-71 2xl:-mr-50">
       {/* Currently playing components */}
       <div className="border-crimson rounded border-2 md:mb-120 md:w-1/2 lg:mb-90 lg:ml-9 xl:ml-40 xl:w-[450px] 2xl:w-[450px]">
         <CoverArt cover={cover}/>
@@ -127,56 +94,56 @@ export default function MusicPlayer( {prevImage, setPrevImage, firstSongClick, s
         <PlayListItem
         playlistSongs={playlistSongs}
           changeFirstSong={() => {
-            setText(firstTitle);
-            setArtist(firstArtist);
-            setCover(firstCover);
+            setText(items[0].title);
+            setArtist(items[0].artist);
+            setCover(items[0].cover);
             firstSongClick();
           }}
           changeSecondSong={() => {
-            setText(secondTitle);
-            setArtist(secondArtist);
-            setCover(secondCover);
+            setText(items[1].title);
+            setArtist(items[1].artist);
+            setCover(items[1].cover);
             secondSongClick();
           }}
           changeThirdSong={() => {
-            setText(thirdTitle);
-            setArtist(thirdArtist);
-            setCover(thirdCover);
+            setText(items[2].title);
+            setArtist(items[2].artist);
+            setCover(items[2].cover);
           }}
           changeFourthSong={() => {
-            setText(fourthTitle);
-            setArtist(fourthArtist);
-            setCover(fourthCover);
+            setText(items[3].title);
+            setArtist(items[3].artist);
+            setCover(items[3].cover);
           }}
           changeFifthSong={() => {
-            setText(fifthTitle);
-            setArtist(fifthArtist);
-            setCover(fifthCover);
+            setText(items[4].title);
+            setArtist(items[4].artist);
+            setCover(items[4].cover);
           }}
           changeSixthSong={() => {
-            setText(sixthTitle);
-            setArtist(sixthArtist);
-            setCover(sixthCover);
+            setText(items[5].title);
+            setArtist(items[5].artist);
+            setCover(items[5].cover);
           }}
           changeSeventhSong={() => {
-            setText(seventhTitle);
-            setArtist(seventhArtist);
-            setCover(seventhCover);
+            setText(items[6].title);
+            setArtist(items[6].artist);
+            setCover(items[6].cover);
           }}
           changeEighthSong={() => {
-            setText(eighthTitle);
-            setArtist(eighthArtist);
-            setCover(eighthCover);
+            setText(items[7].title);
+            setArtist(items[7].artist);
+            setCover(items[7].cover);
           }}
           changeNinthSong={() => {
-            setText(ninthTitle);
-            setArtist(ninthArtist);
-            setCover(ninthCover);
+            setText(items[8].title);
+            setArtist(items[8].artist);
+            setCover(items[8].cover);
           }}
           changeTenthSong={() => {
-            setText(tenthTitle);
-            setArtist(tenthArtist);
-            setCover(tenthCover);
+            setText(items[9].title);
+            setArtist(items[9].artist);
+            setCover(items[9].cover);
           }}
         />
       </div>

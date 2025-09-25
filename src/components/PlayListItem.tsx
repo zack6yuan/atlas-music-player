@@ -13,9 +13,9 @@ export default function PlayListItem({
     changeEighthSong,
     changeNinthSong,
     changeTenthSong,
-    playlistSongs,
 }) {
   const [color, setColor] = useState("white");
+  const [songData, setSongData] = useState([])
 
   const playlistURL = "api/v1/playlist"; // playlist URL
 
