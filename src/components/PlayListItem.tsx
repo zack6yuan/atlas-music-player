@@ -73,24 +73,24 @@ export default function PlayListItem({
 
   return (
     <div className="">
-      <h1 className="bg-white sm:mt-6 sm:ml-5">Playlist</h1>
+      <h1 className="bg-white sm:mt-6 sm:mb-10 sm:ml-5 sm:mr-9 rounded">Playlist</h1>
       <div className="sm:-mt-6 md:-mt-8 lg:-mt-5 xl:-mt-10">
-        <div
-          id="0"
+      <div
           className="song-div flex cursor-pointer rounded sm:mt-1 sm:mr-9 sm:ml-5"
-          onClick={ changeFirstSong }
+          style={{ backgroundColor: color }}
+          onClick={changeFirstSong}
         >
-          <div className="font-medium sm:mt-8 xl:mt-14 2xl:mt-13">
+          <div className="font-medium">
             <p className="desc-text uppercase">{songs[0].title}</p>
             <div className="">
-              <p className="text-crimson desc-text text-sm italic">
+                <p className="text-crimson desc-text text-sm italic">
                 {songs[0].artist}
-              </p>
+            </p>
             </div>
           </div>
-          <div className="sm:mt-11 sm:mr-1 sm:ml-auto xl:mt-16 xl:mr-2 2xl:mr-110">
+          <div className="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110">
             <p className="text-gray song-length font-medium">
-              {songs[0].length}
+              {songs[1].length}
             </p>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default function PlayListItem({
             </div>
           </div>
           <div className="xl:mr2 sm:mt-3 sm:mr-1 sm:ml-auto 2xl:mr-110">
-            <p className="text-gray song-length font-medium">
+            <p className=" text-gray song-length font-medium">
               {songs[1].length}
             </p>
           </div>
@@ -231,7 +231,7 @@ export default function PlayListItem({
           </div>
         </div>
         <div
-          className="rousong-div nded flex cursor-pointer sm:mt-1 sm:mr-9 sm:mb-5 sm:ml-5"
+          className="song-div rounded flex cursor-pointer sm:mt-1 sm:mr-9 sm:mb-5 sm:ml-5"
           style={{ backgroundColor: color }}
           onClick={changeTenthSong}
         >
