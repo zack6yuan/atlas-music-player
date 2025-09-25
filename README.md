@@ -1,6 +1,6 @@
 # Atlas Music Player
 
-* [Live Site](https://atlas-music-player-zyuan.netlify.app)
+* [Netlify App](https://atlas-music-player-zyuan.netlify.app)
 
 * A web-based music player application built with React. This project is a showcase of building a responsive, single-page application with a clean, component-based architecture.
 
